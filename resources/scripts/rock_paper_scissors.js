@@ -81,5 +81,4 @@ class RockPaperScissors {
       this.gameHistoryLog.push(this.username + ' and CPU both selected ' + cpuSelection + ': It`s a tie!');
     }
   }
-  
 }
