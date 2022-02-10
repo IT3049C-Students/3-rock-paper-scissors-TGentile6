@@ -12,12 +12,11 @@ Instructions to this assignment can be found [here](https://it3049c.github.io/Ma
 
 ## Self-Evaluation: 
 how many points out of 20 does your team deserve on this assignment. Revise the assignment grading guideline and assignment rubrics for guidance.
-I would say this assignment is worth a 17/20. I completed all aspects to the best of my ability however the site does not function as intended.
+20 / 20 Points, I believe the assignment is properly completed.
 
 ## Team Reflection:
 - Where did you encounter struggles today, and what did you do to deal with it?
-I didn't have any issues with this assignment until the game controller section, I was unable to get the site to properly function and I could not figure out why it wasn't working.
-To my knowledge I was following the instructions correctly and I tried to find solutions by checking the documentation of JS and HTML, but I couldn't figure out what was causing my issue.
+After meeting and correcting my errors I was able to get the code properly functioning, outside of missing the information that I needed to prevent the default function of a button everything in this lab was well within my knowledge.
 
 ### How long it took us to finish this?
 approximately 2 hours.

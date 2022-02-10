@@ -68,17 +68,17 @@ class RockPaperScissors {
    */
   play(userSelection){
     const cpuSelection = this.generateCPUResponse();
-    const result = determineWinner(userSelection, cpuSelection);
+    const result = this.determineWinner(userSelection, cpuSelection);
     if (result == 'win' ){
       this.score.user ++;
-      this.gameHistoryLog.push(this.username + ' selected ' + userSelection + ', CPU selected ' + cpuSelection + ': ' + this.username + ' wins!');
+      this.gameHistoryLog.push(this.username + ' selected ' + userSelection + ', CPU selected ' + cpuSelection + ': ' + this.username + ' wins! ');
     }
     else if (result == 'lose' ){
       this.score.cpu ++;
-      this.gameHistoryLog.push(this.username + ' selected ' + userSelection + ', CPU selected ' + cpuSelection + ': CPU wins!');
+      this.gameHistoryLog.push(this.username + ' selected ' + userSelection + ', CPU selected ' + cpuSelection + ': CPU wins! ');
     }
     else{
-      this.gameHistoryLog.push(this.username + ' and CPU both selected ' + cpuSelection + ': It`s a tie!');
+      this.gameHistoryLog.push(this.username + ' and CPU both selected ' + cpuSelection + ': It`s a tie! ');
     }
   }
 }

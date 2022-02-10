@@ -16,19 +16,20 @@ gameScreen.classList.add(`d-none`);
 
 // updateScoreTallyUI
 function updateScoreTallyUI(){
-  scoreParagraph.innerHTML = game.userName + ': '+ game.score.user + ' v CPU: ' + game.score.cpu;
+  scoreParagraph.innerHTML = game.username + ': '+ game.score.user + ' v CPU: ' + game.score.cpu;
 }
 
 // updateGameHistoryUI
 function updateGameHistoryUI(){
-  gameHistoryParagraph.textContent = "";
+  gameHistoryParagraph.innerHTML = "";
   game.gameHistoryLog.forEach(element => {
-    gameHistoryParagraph.textContent += element + '\n';
+    gameHistoryParagraph.innerHTML += element + '<br>';
   });
 }
 
 // start-game-button EventListener
-startGameButton.addEventListener(`click`, function () {
+startGameButton.addEventListener(`click`, function (event) {
+  event.preventDefault();
   const username = userName.value;
   game = new RockPaperScissors(username);
   welcomeScreen.classList.add(`d-none`);
@@ -37,8 +38,9 @@ startGameButton.addEventListener(`click`, function () {
 });
 
 // go-button EventListener
-goButton.addEventListener(`click`, function () {
-  game.play(userSelection);
+goButton.addEventListener(`click`, function (event) {
+  event.preventDefault();
+  game.play(userSelection.value);
   updateScoreTallyUI();
   updateGameHistoryUI();
 });
